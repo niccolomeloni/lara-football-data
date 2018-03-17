@@ -1,0 +1,32 @@
+{
+    "name": "niccolomeloni/lara-football-data",
+    "description": "Use football-data.org API in your Laravel application",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Niccolò Meloni",
+            "email": "niccolomeloni@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Niccolomeloni\\LaraFootballData\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Niccolomeloni\\LaraFootballData\\ApiFootballDataServiceProvider"
+            ],
+            "aliases": {
+                "LaraFootballData": "Niccolomeloni\\LaraFootballData\\Facades\\ApiFootballData"
+            }
+        }
+    }
+}
