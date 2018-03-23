@@ -31,6 +31,8 @@ class ApiFootballDataServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $source = $this->configPath();
+        $this->publishes([ $source => config_path('football-data.php') ]);
         $this->mergeConfigFrom($this->configPath(), 'football-data');
     }
 
