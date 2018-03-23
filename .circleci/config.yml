@@ -3,15 +3,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/php:7.1.5-browsers
+      - image: circleci/php:7.1-browsers
     working_directory: ~/laravel
 
     steps:
       - checkout
-
-      - run:
-         name: Update composer to latest version
-         command: composer self-update
 
       - restore_cache:
           keys:
