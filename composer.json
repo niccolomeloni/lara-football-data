@@ -4,7 +4,7 @@
     "keywords": ["laravel", "football", "data", "api"],
     "type": "library",
     "require": {
-        "php": "^7.2",
+        "php": "^7.1",
         "guzzlehttp/guzzle": "^6.3"
     },
     "require-dev": {
