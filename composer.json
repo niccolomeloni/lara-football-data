@@ -1,6 +1,7 @@
 {
     "name": "niccolomeloni/lara-football-data",
     "description": "Use football-data.org API in your Laravel application",
+    "keywords": ["laravel", "football", "data", "api"],
     "type": "library",
     "require": {
         "php": "^7.2",
