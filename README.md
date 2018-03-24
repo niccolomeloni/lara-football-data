@@ -1,5 +1,7 @@
 # Lara Football Data
 
+![CircleCI](https://img.shields.io/circleci/project/github/niccolomeloni/lara-football-data.svg) ![Packagist](https://img.shields.io/packagist/v/niccolomeloni/lara-football-data.svg) ![license](https://img.shields.io/github/license/niccolomeloni/lara-football-data.svg)
+
 > A [Football Data](https://www.football-data.org/) API bridge for Laravel
 
 ## Install via Composer
@@ -10,9 +12,14 @@ Install the `niccolomeloni/lara-football-data` package via Composer by typing fo
 $ composer require niccolomeloni/lara-football-data
 ```
 
+## Service Provider and Facades ( Laravel 5.5 or above )
+
+If you are using Laravel >= 5.5 that's all: this package supports Laravel new [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery).
+
+
 ## Service Provider and Facades ( Laravel 5.4 or below )
 
-If you are using Laravel >= 5.5 that's all: this package supports Laravel new [Package Discovery](https://laravel.com/docs/5.5/packages#package-discovery). Otherwise, you also need to add the service provider to your `config/app.php` providers array:
+You need to add the service provider to your `config/app.php` providers array:
 
 ```php
 'providers' => [
@@ -42,7 +49,7 @@ You should now have a `config/football-data.php` file that allows you to configu
 
 ## Examples
 
-Here you can see an example of how to use this package with `LaraFootballData` facade.
+Here you can see an example of how to use this package with `LaraFootballData` facade:
 
 ```php
 LaraFootballData::competitions($season = "");
